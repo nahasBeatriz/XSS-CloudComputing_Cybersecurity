@@ -39,7 +39,7 @@ Todos os containers se comunicam pela rede bridge interna `rede-xss`.
 
 1. Clone o repositório:
 ```
-   git clone https://github.com/SEU_USUARIO/xss-projeto.git
+   git clone https://github.com/nahasBeatriz/XSS-CloudComputing_Cybersecurity.git
    cd xss-projeto
 ```
 3. Suba o ambiente:
