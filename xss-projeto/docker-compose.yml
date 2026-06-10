@@ -1,0 +1,19 @@
+networks:
+  rede-xss:
+    driver: bridge
+
+services:
+  app-vulneravel:
+    build: ./app-vulneravel
+    container_name: app-vulneravel
+    networks:
+      - rede-xss
+    ports:
+      - "8080:80"
+
+  atacante:
+    image: alpine:latest
+    container_name: atacante
+    networks:
+      - rede-xss
+    command: sh -c "apk add --no-cache curl && tail -f /dev/null"
