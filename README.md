@@ -22,7 +22,7 @@ usuário que acesse a aplicação comprometida.
 |-----------------|------------------|---------------------------------------------|
 | banco           | mysql:8.0        | Banco de dados MySQL com a tabela de comentários |
 | app-vulneravel  | php:8.2-apache   | Aplicação PHP intencionalmente vulnerável   |
-| atacante        | alpine:latest    | Contêiner com curl para ataques via rede    |
+| atacante        | alpine:latest    | Container com curl para ataques via rede    |
 
 Todos os containers se comunicam pela rede bridge interna `rede-xss`.
 
